@@ -12,7 +12,7 @@ import messages from './messages';
 
 function AuthenticatedUserDropdown({ intl, username }) {
   const dashboardMenuItem = (
-    <Dropdown.Item href={`${getConfig().LMS_BASE_URL}/dashboard`}>
+      <Dropdown.Item href={`https://injaz.edu.jo/`}>
       {intl.formatMessage(messages.dashboard)}
     </Dropdown.Item>
   );
