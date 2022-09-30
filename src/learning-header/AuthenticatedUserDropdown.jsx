@@ -28,13 +28,7 @@ function AuthenticatedUserDropdown({ intl, username }) {
           </span>
         </Dropdown.Toggle>
         <Dropdown.Menu className="dropdown-menu-right">
-          {dashboardMenuItem}
-          <Dropdown.Item href={`${getConfig().LMS_BASE_URL}/u/${username}`}>
-            {intl.formatMessage(messages.profile)}
-          </Dropdown.Item>
-          <Dropdown.Item href={`${getConfig().LMS_BASE_URL}/account/settings`}>
-            {intl.formatMessage(messages.account)}
-          </Dropdown.Item>
+          {dashboardMenuItem}          
           { getConfig().ORDER_HISTORY_URL && (
             <Dropdown.Item href={getConfig().ORDER_HISTORY_URL}>
               {intl.formatMessage(messages.orderHistory)}

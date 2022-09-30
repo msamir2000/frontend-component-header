@@ -36,7 +36,8 @@ function Header({ intl }) {
   const mainMenu = [
     {
       type: 'item',
-      href: `${config.LMS_BASE_URL}/dashboard`,
+      //href: `${config.LMS_BASE_URL}/dashboard`,
+        href: `https://injaz.edu.jo/`,
       content: intl.formatMessage(messages['header.links.courses']),
     },
   ];
@@ -50,19 +51,20 @@ function Header({ intl }) {
   const userMenu = authenticatedUser === null ? [] : [
     {
       type: 'item',
-      href: `${config.LMS_BASE_URL}/dashboard`,
+      //href: `${config.LMS_BASE_URL}/dashboard`,
+        href: `https://injaz.edu.jo/`,
       content: intl.formatMessage(messages['header.user.menu.dashboard']),
     },
-    {
-      type: 'item',
-      href: `${config.LMS_BASE_URL}/u/${authenticatedUser.username}`,
-      content: intl.formatMessage(messages['header.user.menu.profile']),
-    },
-    {
-      type: 'item',
-      href: `${config.LMS_BASE_URL}/account/settings`,
-      content: intl.formatMessage(messages['header.user.menu.account.settings']),
-    },
+   // {
+   //   type: 'item',
+   //   href: `${config.LMS_BASE_URL}/u/${authenticatedUser.username}`,
+   //   content: intl.formatMessage(messages['header.user.menu.profile']),
+   // },
+   // {
+    //  type: 'item',
+    //  href: `${config.LMS_BASE_URL}/account/settings`,
+    //  content: intl.formatMessage(messages['header.user.menu.account.settings']),
+    //},
     {
       type: 'item',
       href: config.LOGOUT_URL,
@@ -81,17 +83,18 @@ function Header({ intl }) {
       href: config.LOGIN_URL,
       content: intl.formatMessage(messages['header.user.menu.login']),
     },
-    {
-      type: 'item',
-      href: `${config.LMS_BASE_URL}/register`,
-      content: intl.formatMessage(messages['header.user.menu.register']),
-    },
+    //{
+    //  type: 'item',
+    //  href: `${config.LMS_BASE_URL}/register`,
+    //  content: intl.formatMessage(messages['header.user.menu.register']),
+    //},
   ];
 
   const props = {
     logo: config.LOGO_URL,
     logoAltText: config.SITE_NAME,
-    logoDestination: `${config.LMS_BASE_URL}/dashboard`,
+   // logoDestination: `${config.LMS_BASE_URL}/dashboard`,
+      logoDestination: `https://injaz.edu.jo/`,
     loggedIn: authenticatedUser !== null,
     username: authenticatedUser !== null ? authenticatedUser.username : null,
     avatar: authenticatedUser !== null ? authenticatedUser.avatar : null,
