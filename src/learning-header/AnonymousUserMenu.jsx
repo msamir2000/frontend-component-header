@@ -9,17 +9,10 @@ import genericMessages from '../generic/messages';
 
 function AnonymousUserMenu({ intl }) {
   return (
-    <div>
-      <Button
-        className="mr-3"
-        variant="outline-primary"
-              href={`https://injaz.edu.jo/`}
-      >
-        {intl.formatMessage(genericMessages.registerSentenceCase)}
-      </Button>
+    <div>      
       <Button
         variant="primary"
-        href={`${getLoginRedirectUrl(global.location.href)}`}
+        href={`https://injaz.edu.jo/`}
       >
         {intl.formatMessage(genericMessages.signInSentenceCase)}
       </Button>
