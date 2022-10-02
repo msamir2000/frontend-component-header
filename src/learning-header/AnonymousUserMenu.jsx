@@ -13,7 +13,7 @@ function AnonymousUserMenu({ intl }) {
       <Button
         className="mr-3"
         variant="outline-primary"
-        href={`${getConfig().LMS_BASE_URL}/register?next=${encodeURIComponent(global.location.href)}`}
+              href={`https://injaz.edu.jo/`}
       >
         {intl.formatMessage(genericMessages.registerSentenceCase)}
       </Button>
