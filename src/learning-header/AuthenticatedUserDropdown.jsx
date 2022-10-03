@@ -12,7 +12,7 @@ import messages from './messages';
 
 function AuthenticatedUserDropdown({ intl, username }) {
   const dashboardMenuItem = (
-      <Dropdown.Item href={`https://injaz.edu.jo/dashboard`}>
+      <Dropdown.Item href={`https://injaz.edu.jo/mycourses`}>
       {intl.formatMessage(messages.dashboard)}
     </Dropdown.Item>
   );
